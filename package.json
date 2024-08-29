@@ -1,0 +1,32 @@
+{
+	"name": "RBI Crawler",
+	"version": "0.0.1",
+	"type": "commonjs",
+	"description": "RBI data extractor",
+	"dependencies": {
+		"22": "^0.0.0",
+		"apify": "^3.1.10",
+		"crawlee": "^3.5.4",
+		"fs": "^0.0.1-security",
+		"fs-extra": "^11.2.0",
+		"node-fetch": "^3.3.2",
+		"path": "^0.12.7",
+		"pdf-lib": "^1.17.1",
+		"pdf-parse": "^1.1.1",
+		"playwright": "^1.43.1"
+	},
+	"devDependencies": {
+		"@apify/eslint-config": "^0.4.0",
+		"@playwright/test": "^1.43.1",
+		"@types/pdf-parse": "^1.1.4",
+		"eslint": "^8.50.0"
+	},
+	"scripts": {
+		"start": "node src/main2.js && node src/main.js",
+		"lint": "eslint ./src --ext .js,.jsx",
+		"lint:fix": "eslint ./src --ext .js,.jsx --fix",
+		"test": "echo \"Error: oops, the no tests yet, sad!\" && exit 1",
+		"postinstall": "npx crawlee install-playwright-browsers"
+	},
+	"author": "Dhaval and Yash"
+}
